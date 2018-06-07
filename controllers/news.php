@@ -33,10 +33,7 @@ class NewsController  extends BaseController{
 		}
 
 		$http_response = $this->network->http_response_code(); //get and set http_response code 
-
-
-
-		 
+ 
 		echo "<pre>";  
 			var_dump($dns_stat);
 			var_dump($dns_record);
