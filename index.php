@@ -19,8 +19,9 @@ require("classes/load.php");
 
 require_once("config/config.php");
 require_once("config/constants.php");
+require_once("include/mysql_con.php");
 
-
+echo "------------0";
 // secondary config include start
 // secondary config file should be on name of controller like controllerName_constants.php
 // and should be located in config folder.
