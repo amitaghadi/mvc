@@ -6,6 +6,10 @@ class TableController  extends BaseController{
 		$this->load = new Load();
 		$this->table_model = $this->load->model("table");	
 	}
+	public function index(){
+		$genindex_html = $this->view->render_return( 'table/index' );
+		echo $genindex_html;
+	}
 	public function list_table($table_name){
 		$input = $_POST;
 		$input['table_name'] = $table_name;
